@@ -201,6 +201,13 @@ output/
 바로 볼 수 있고, `[1]` 을 누르면 그 뒤 빠진 영업일부터 이어서 쌓는다.
 대시보드·리포트·로그는 실행할 때 새로 생기므로 저장소에서 제외한다.
 
+설치 없이 웹에서 보는 대시보드는 https://hongym1980-crypto.github.io/ThemeETF/ 이다.
+`docs/index.html` 을 GitHub Pages 로 띄운 것이며, 아래 명령으로 다시 만들어 올리면 갱신된다.
+
+```bat
+python -m themeetf dashboard --offline -o docs/index.html
+```
+
 위치를 바꾸려면 환경변수 `THEMEETF_OUTPUT` 을 지정한다. 공유 드라이브에 쌓아
 팀에서 같이 보는 용도로 쓸 수 있다.
 
