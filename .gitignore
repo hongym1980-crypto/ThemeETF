@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+*.spec
+
+# 산출물 (DB·대시보드·리포트·로그) — 매일 바뀌고 용량이 큼
+output/
+reports/
+*.sqlite
+*.sqlite-journal
+*.log
+
+# price_data 분석 결과물 (스크립트만 관리)
+price_data/prices/
+price_data/*.csv
+price_data/*.html
+price_data/summary.md
+
+# 개인 문서·로컬 설정
+*.docx
+.claude/
+
+# OS
+Thumbs.db
+.DS_Store
