@@ -8,11 +8,16 @@ build/
 dist/
 *.spec
 
-# 산출물 (DB·대시보드·리포트·로그) — 매일 바뀌고 용량이 큼
-output/
+# 산출물 (대시보드·리포트·로그) — 매일 바뀌고 용량이 큼
+# 단, 누적 스냅샷 DB 는 과거 이력을 다른 PC 에서도 볼 수 있도록 저장소에 포함한다.
+output/*
+!output/data/
+output/data/*
+!output/data/themeetf.sqlite
 reports/
-*.sqlite
 *.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
 *.log
 
 # price_data 분석 결과물 (스크립트만 관리)
